@@ -3,5 +3,11 @@
 
 sentence = input("Please type in a sentence:")
 
-print(sentence[1])
+word = 0
+if len(sentence) != 0:
+    print(sentence[0])
+    while word < len(sentence):
+        if sentence[word] == " ":
+            print(sentence[word+1])
+        word += 1
 
